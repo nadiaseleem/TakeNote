@@ -34,4 +34,4 @@ download app apk : https://www.mediafire.com/file/bix85vs0pphjitx/TakeNote.apk/f
 
 - Dagger Hilt: for dependency injection to simplify the app's architecture and make it easier to manage dependencies between different components.
 
-- view binding: to automates the process of inflating views in the app's UI instead of manually inflating views in code.
+- View Binding: to automates the process of inflating views in the app's UI instead of manually inflating views in code.
