@@ -41,23 +41,6 @@
                     android:textColor="@color/white"
                     android:textColorHint="#ECECEC" />
 
-                <EditText
-                    android:id="@+id/edt_Notes"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_350sdp"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:background="@drawable/edit_text_shape"
-                    android:fillViewport="true"
-                    android:fontFamily="@font/regular"
-                    android:gravity="top"
-                    android:overScrollMode="always"
-                    android:padding="@dimen/_15sdp"
-                    android:scrollbarStyle="insideInset"
-                    android:scrollbars="vertical"
-                    android:textColor="@color/white"
-                    android:textColorHint="#ECECEC" />
-
                 <HorizontalScrollView
                     android:id="@+id/hsv"
                     android:layout_width="fill_parent"
@@ -80,6 +63,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
                             android:background="@drawable/blue_dot"
                             android:drawablePadding="@dimen/_5sdp"
                             android:fontFamily="@font/bold"
@@ -134,6 +118,23 @@
                     </LinearLayout>
 
                 </HorizontalScrollView>
+
+                <EditText
+                    android:id="@+id/edt_Notes"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_350sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/edit_text_shape"
+                    android:fillViewport="true"
+                    android:fontFamily="@font/regular"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:padding="@dimen/_15sdp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/white"
+                    android:textColorHint="#ECECEC" />
 
 
             </LinearLayout>

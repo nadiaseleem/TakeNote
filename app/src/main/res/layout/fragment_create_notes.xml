@@ -40,26 +40,8 @@
                         android:fontFamily="@font/bold"
                         android:hint="Title"
                         android:padding="@dimen/_10sdp"
-
+                        android:layout_weight="1"
                         android:textColor="@color/white"
-                        android:textColorHint="#ECECEC" />
-
-
-                    <EditText
-                        android:id="@+id/edt_Notes"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_350sdp"
-                        android:layout_marginTop="@dimen/_20sdp"
-                        android:background="@drawable/edit_text_shape"
-                        android:fillViewport="true"
-                        android:fontFamily="@font/regular"
-                        android:gravity="top"
-                        android:overScrollMode="always"
-                        android:padding="@dimen/_15sdp"
-                        android:scrollbarStyle="insideInset"
-                        android:scrollbars="vertical"
-                        android:textColor="@color/white"
-
                         android:textColorHint="#ECECEC" />
 
                     <HorizontalScrollView
@@ -138,6 +120,25 @@
                         </LinearLayout>
 
                     </HorizontalScrollView>
+
+
+                    <EditText
+                        android:id="@+id/edt_Notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_350sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/edit_text_shape"
+                        android:fillViewport="true"
+                        android:fontFamily="@font/regular"
+                        android:gravity="top"
+                        android:overScrollMode="always"
+                        android:padding="@dimen/_15sdp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/white"
+
+                        android:textColorHint="#ECECEC" />
+
 
                 </LinearLayout>
 
