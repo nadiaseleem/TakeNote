@@ -22,10 +22,16 @@ download app apk : https://www.mediafire.com/file/bix85vs0pphjitx/TakeNote.apk/f
 
 # 🌟 Libraries and technologies used
 
-- Navigation component
-- Room
-- MVVM Repository
-- Coroutines
-- StateFlow
-- Dagger Hilt
-- view binding 
+- Navigation component: to manage navigation within the app and creating a single activity that contains multiple fragments, rather than creating multiple activities.
+
+- Room: to save data (notes) in a local database on the user's device. This can be useful for caching data or for offline functionality.
+
+- MVVM: help in saperating the logic code from the views. This makes the app easier to maintain and update.
+
+- Coroutines: a library for asynchronous programming in Kotlin that is used to handle asynchronous background threading, such as network requests or database operations, without blocking the main thread or causing performance issues.
+
+- StateFlow: a library for reactive programming in Kotlin that is used to create a stream of data that can be observed and updated in real-time,it is useful for managing the state of the app's UI, since it allows changes to the data to be propagated to any observers automatically. 
+
+- Dagger Hilt: for dependency injection to simplify the app's architecture and make it easier to manage dependencies between different components.
+
+- view binding: to automates the process of inflating views in the app's UI instead of manually inflating views in code.
