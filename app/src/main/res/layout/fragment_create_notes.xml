@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createNotesFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bc_color"
+    tools:context=".ui.Fragments.CreateNotesFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp">
+
+
+                    <EditText
+                        android:id="@+id/edt_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_text_shape"
+                        android:fontFamily="@font/bold"
+                        android:hint="Title"
+                        android:padding="@dimen/_10sdp"
+
+                        android:textColor="@color/white"
+                        android:textColorHint="#ECECEC" />
+
+
+                    <EditText
+                        android:id="@+id/edt_Notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_350sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/edit_text_shape"
+                        android:fillViewport="true"
+                        android:fontFamily="@font/regular"
+                        android:gravity="top"
+                        android:overScrollMode="always"
+                        android:padding="@dimen/_15sdp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/white"
+
+                        android:textColorHint="#ECECEC" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fillViewport="true"
+                        android:measureAllChildren="false"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/tvWork"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/blue_dot"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Work"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvLife"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/green_dot"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Life"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvFamily"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/red_dot"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Family"
+
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvEntertainment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/yellow_dot"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center"
+
+                                android:padding="@dimen/_10sdp"
+                                android:text="Entertainment"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCreateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_25sdp"
+        android:backgroundTint="@color/red_color"
+        android:clickable="true"
+        android:foregroundTint="@color/white"
+        android:src="@drawable/ic_yes"
+        android:tint="@color/white"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="644dp" />
+
+</FrameLayout>

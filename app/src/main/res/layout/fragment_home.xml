@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bc_color"
+    tools:context=".ui.Fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/vLinearLayour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/hsv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgAllNotes"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/button_style" />
+
+
+                    <TextView
+                        android:id="@+id/filterWork"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/grey_dot"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Work"
+                        android:textColor="@color/blue_color" />
+
+                    <TextView
+                        android:id="@+id/filterLife"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/grey_dot"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Life"
+                        android:textColor="@color/green_color" />
+
+                    <TextView
+                        android:id="@+id/filterFamily"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/grey_dot"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Family"
+
+                        android:textColor="@color/red_color" />
+
+                    <TextView
+                        android:id="@+id/filterEntertainment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/grey_dot"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+
+                        android:padding="@dimen/_10sdp"
+                        android:text="Entertainment"
+                        android:textColor="@color/yellow_color" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:src="@drawable/dismiss" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllNotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView2" />
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_25sdp"
+            android:backgroundTint="@color/red_color"
+            android:src="@drawable/ic_add"
+
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
