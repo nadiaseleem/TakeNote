@@ -5,7 +5,7 @@ for their notes.
 
 # 💡 Preview
 
-download app apk : https://www.mediafire.com/file/bix85vs0pphjitx/TakeNote.apk/file
+📱 download app apk : https://www.mediafire.com/file/bix85vs0pphjitx/TakeNote.apk/file
 
 
 
