@@ -30,7 +30,7 @@ download app apk : https://www.mediafire.com/file/bix85vs0pphjitx/TakeNote.apk/f
 
 - Coroutines: a library for asynchronous programming in Kotlin that is used to handle asynchronous background threading, such as network requests or database operations, without blocking the main thread or causing performance issues.
 
-- StateFlow: a library for reactive programming in Kotlin that is used to create a stream of data that can be observed and updated in real-time,it is useful for managing the state of the app's UI, since it allows changes to the data to be propagated to any observers automatically. 
+- StateFlow: a library for reactive programming in Kotlin that is used to create a stream of data that can be observed and updated in real-time,it is useful for managing the state of the app's UI, since it allows changes to the data to be propagated to any observers automatically. It supports backpressure.
 
 - Dagger Hilt: for dependency injection to simplify the app's architecture and make it easier to manage dependencies between different components.
 
