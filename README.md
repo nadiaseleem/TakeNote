@@ -1,4 +1,4 @@
-# TakeNote
+# TakeNote ✓
 
 a note-taking android application designed to help users easily store, categorize, filter and search
 for their notes.
@@ -19,6 +19,7 @@ download app apk : https://www.mediafire.com/file/bix85vs0pphjitx/TakeNote.apk/f
 
 
 </p>
+
 # 🌟 Libraries and technologies used
 
 - Navigation component
